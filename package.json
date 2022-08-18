@@ -1,0 +1,15 @@
+{
+  "name": "course-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "nodemon dist/index.js",
+    "build": "tsc"
+  },
+  "author": "Ricardo Badillo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
