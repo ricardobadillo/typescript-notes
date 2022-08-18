@@ -1,1 +1,1 @@
-# typescript-notes
+# Notas de Types avanzados de TypeScript
