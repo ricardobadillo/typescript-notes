@@ -1,4 +1,4 @@
-export {}
+export {};
 
 interface Persona {
     nombre: string;
@@ -13,5 +13,6 @@ interface Empleado extends Persona {
 const empleado: Empleado = {
     nombre: 'Ricardo',
     edad: 27,
-    salario: 2500
+    salario: 2500,
+    saludo: 'Hola'
 };

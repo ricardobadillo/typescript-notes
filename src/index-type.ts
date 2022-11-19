@@ -3,4 +3,4 @@ interface Persona {
     edad: number;
 };
 
-// Persona["nombre"]. Output: string;
+// Persona["nombre"] ---> Output: string;

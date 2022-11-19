@@ -6,5 +6,6 @@ var Direcciones;
     Direcciones["Izquierda"] = "Left";
     Direcciones["Derecha"] = "Right";
 })(Direcciones || (Direcciones = {}));
+;
 const direction = Direcciones.Abajo;
 console.log('Dirección: ', direction);

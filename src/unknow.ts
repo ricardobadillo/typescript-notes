@@ -17,8 +17,10 @@ unknowVar = {}; // El resto no son son válidos.
 
 if (typeof unknowVar === 'string') {
     unknowVar.toUpperCase();
-}
+    console.log(unknowVar);
+};
 
 if (typeof unknowVar === 'boolean') {
     let isNew: boolean = unknowVar;
-}
+    console.log(isNew);
+};

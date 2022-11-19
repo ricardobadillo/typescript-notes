@@ -1,8 +1,8 @@
 const createPerson = (
-    id: string | number, 
-    name: string,
-    lastName?: string,
-    status?: boolean
+        id: string | number, 
+        name: string,
+        lastName?: string,
+        status?: boolean
     ) => {
         
         return {
@@ -13,8 +13,8 @@ const createPerson = (
         };
 };
 
-const p1 = createPerson(10, 'Ricardo', 'Badillo');
-const p2 = createPerson(20, 'Javier');
+const person = createPerson(10, 'Ricardo', 'Badillo');
+const otherPerson = createPerson(20, 'Javier');
 
-console.log(p1);
-console.log(p2);
+console.log(person);
+console.log(otherPerson);

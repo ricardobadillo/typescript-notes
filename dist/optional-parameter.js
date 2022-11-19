@@ -7,7 +7,7 @@ const createPerson = (id, name, lastName, status) => {
         status: status !== null && status !== void 0 ? status : false
     };
 };
-const p1 = createPerson(10, 'Ricardo', 'Badillo');
-const p2 = createPerson(20, 'Javier');
-console.log(p1);
-console.log(p2);
+const person = createPerson(10, 'Ricardo', 'Badillo');
+const otherPerson = createPerson(20, 'Javier');
+console.log(person);
+console.log(otherPerson);

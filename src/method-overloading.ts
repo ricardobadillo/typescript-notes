@@ -13,3 +13,6 @@ function parseString(input: CustomType): CustomType {
 
 const responseArray = parseString('Ricardo');
 const responseString = parseString(['1', '2', '3']);
+
+console.log(responseArray);  // ---> Output: ['R', 'i', 'c', 'a', 'r', 'd', 'o'];
+console.log(responseString); // ---> Output: 123;
