@@ -1,20 +1,13 @@
-const createPerson = (
-        id: string | number, 
-        name: string,
-        lastName?: string,
-        status?: boolean
-    ) => {
-        
-        return {
-            id, 
-            name, 
-            lastName: lastName || 'Sin apellido',
-            status: status ?? false
-        };
+export {};
+
+type ID = string | number;
+
+const crearPersona = (id: ID, name: string, lastName?: string, status?: boolean) => {
+    return { id, name, lastName: lastName || 'Sin apellido', status: status ?? false };
 };
 
-const person = createPerson(10, 'Ricardo', 'Badillo');
-const otherPerson = createPerson(20, 'Javier');
+// { id: 10, name: "Ricardo", lastName: "Badillo", status: false }
+const persona = crearPersona(10, 'Ricardo', 'Badillo');
 
-console.log(person);
-console.log(otherPerson);
+// { id: 10, name: "Ricardo", lastName: "Sin apellido", status: true }
+const otraPersona = crearPersona(10, 'Ricardo', undefined, true); 

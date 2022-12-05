@@ -4,11 +4,11 @@ interface Persona {
     nombre: string;
     edad: number;
     readonly saludo?: string; // Solo lectura.
-}; 
+};
 
 interface Empleado extends Persona {
     salario: number;
-}
+};
 
 const empleado: Empleado = {
     nombre: 'Ricardo',
