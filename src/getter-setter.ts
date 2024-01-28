@@ -17,5 +17,5 @@ class Game {
 const game = new Game('Dark Souls', 'RPG', 2011);
 console.log(game.nameGame); // ---> Se ve como una propiedad, pero es un método.
 
-game.changeNameGame = 'Outlast'; // Setters.
-console.log(game.nameGame); // Outlast.
+game.changeNameGame = 'Outlast'; // Setter.
+console.log(game.nameGame); // ---> Output: Outlast.

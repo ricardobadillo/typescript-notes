@@ -11,7 +11,7 @@ class JavaScript implements ProgrammingLanguage {
     constructor(public name: string, public side: Side, public frameworks: string[]) { };
 
     greeting(name: string): string {
-        return `Hola, estás usando ${name}`;
+        return `Hola, estás usando ${ name }`;
     }
 }
 

@@ -1,10 +1,11 @@
-type ID = string | number;
+// Type.
+type Id = string | number;
 
 // Uso con variables.
-let ci: ID = 24252180;      // Ok.
-let CI: ID = '24252180';    // Ok. 
+let ci: Id = 24252180;      // Ok.
+let CI: Id = '24252180';    // Ok. 
 
 // Uso en función: Función tipada con el Type definido.
-function identificador(id: ID) : ID {
+function identificador(id: Id): Id {
     return id;
 }

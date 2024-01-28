@@ -5,6 +5,6 @@ class Mathematic {
     static readonly PI: number = 3.14;
 
     static max(...numbers: number[]) {
-        return numbers.reduce((max, item) => max >= item ? max: item);
+        return numbers.reduce((max, item) => max >= item ? max : item);
     }
 }

@@ -1,16 +1,15 @@
 // Genéricos en funciones.
-
-function getValue<T>(value: T) {
+function getValue<T>(value: T): T {
     return value;
 }
 
-// getValue<number>(3).toString();  ---> En caso de que fuese number.
-// getValue<string>('5').toLowerCase(); ---> En caso de que fuese string.
+let iAmString = getValue<string>('Soy un string');
+let iAmNumber = getValue<number>(100);
+let iAmBoolean = getValue<boolean>(true);
 
 
 
 // Genéricos en clases.
-
 export class MyClass<T> {
     private data: T[] = [];
 }

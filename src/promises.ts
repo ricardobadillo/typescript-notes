@@ -6,6 +6,8 @@
             }, time);
         });
 
+        console.log("Promesa creada... Esperando 3 segundos...");
+
         return promise;
     }
 

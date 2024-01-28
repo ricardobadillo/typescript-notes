@@ -12,11 +12,11 @@ export class Animal {
     }
 
     protected saludar(): void {
-        console.log(`Hola, mi nombre es ${this.nombre}`);
+        console.log(`Hola, mi nombre es ${ this.nombre }`);
     }
 }
 
-
+// Con el método super se puede acceder a los métodos y propiedades de la clase padre.
 
 export class Dog extends Animal {
     
@@ -26,7 +26,7 @@ export class Dog extends Animal {
     }
 
     ladrar(onomatopeya: string): void {
-        for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < 3; index++) {
             this.comunicar(onomatopeya);
         }
     }
@@ -39,5 +39,6 @@ export class Dog extends Animal {
 
 const perro = new Dog('Perrillo', 'Ricardo');
 
+// perro.saludar(); // Error. No se puede acceder a un método protected desde fuera de la clase.
 perro.ladrar('Guau');
 perro.mover();

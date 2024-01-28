@@ -3,7 +3,7 @@ export {};
 interface Persona {
     nombre: string;
     edad: number;
-    readonly saludo?: string; // Solo lectura.
+    readonly saludo?: string; // Solo lectura. No se puede modificar.
 };
 
 interface Empleado extends Persona {
@@ -11,8 +11,10 @@ interface Empleado extends Persona {
 };
 
 const empleado: Empleado = {
-    nombre: 'Ricardo',
     edad: 27,
+    nombre: 'Ricardo',
     salario: 2500,
     saludo: 'Hola'
 };
+
+console.log(empleado);
